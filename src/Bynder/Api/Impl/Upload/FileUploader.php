@@ -128,7 +128,7 @@ class FileUploader
 			->then(
 				function ($value) use ($data)
 				{
-					if( isset($data['additional']) && $data['additional'] ){
+					if( (isset($data['additional']) && $data['additional']) && (isset($data['mediaId'])) ){
 						return $this->finalizeUploadAdditionalAsync($data['mediaId'], $value['requestInfo'], $value['chunkNumber']);
 					} else {
 						return $this->finalizeUploadAsync($value['requestInfo'], $value['chunkNumber']);
@@ -138,7 +138,7 @@ class FileUploader
 			->then(
 				function ($finalizeResponse) use ($data)
 				{
-					if( isset($data['additional']) && !$data['additional'] ) {
+					if( (isset($data['additional']) && $data['additional']) && (isset($data['mediaId'])) ){
 						return $this->hasFinishedSuccessfullyAsync($finalizeResponse)
 							->then(
 								function ($response) use ($finalizeResponse) {
@@ -152,7 +152,7 @@ class FileUploader
 			)
 			->then(
 				function ($value) use ($data) {
-					if( isset($data['additional']) && !$data['additional'] ) {
+					if( (isset($data['additional']) && $data['additional']) && (isset($data['mediaId'])) ){
 						if ($value['pollStatus'] != false) {
 							$data['importId'] = $value['finalizeData']['importId'];
 							return $this->saveMediaAsync($data);
