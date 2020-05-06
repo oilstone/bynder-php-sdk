@@ -1,17 +1,15 @@
 {
-  "name": "bynder/bynder-php-sdk",
+  "name": "oilstone/bynder-php-sdk",
   "description": "Bynder PHP Library",
   "keywords": [
-    "bynder",
-    "sdk",
-    "api"
+    "bynder"
   ],
-  "homepage": "https://www.bynder.com",
+  "homepage": "https://github.com/oilstone/bynder-php-sdk",
   "license": "MIT",
   "authors": [
     {
-      "name": "Bynder",
-      "homepage": "https://github.com/Bynder/bynder-php-sdk"
+      "name": "Online Solutions",
+      "email": "support@onlinesolutionsltd.com"
     }
   ],
   "require": {
@@ -26,9 +24,9 @@
     "php-coveralls/php-coveralls": "^2.1"
   },
   "autoload": {
-    "psr-4": { "Bynder\\" : "src/Bynder" }
+    "psr-4": { "Oiltone\\Bynder\\" : "src/Bynder" }
   },
   "autoload-dev": {
-    "psr-4": { "Bynder\\Tests\\": "tests" }
+    "psr-4": { "Oiltone\\Bynder\\Tests\\": "tests" }
   }
 }
