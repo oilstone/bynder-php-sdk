@@ -24,9 +24,9 @@
     "php-coveralls/php-coveralls": "^2.1"
   },
   "autoload": {
-    "psr-4": { "Oiltone\\Bynder\\" : "src/Bynder" }
+    "psr-4": { "Oilstone\\Bynder\\" : "src/Bynder" }
   },
   "autoload-dev": {
-    "psr-4": { "Oiltone\\Bynder\\Tests\\": "tests" }
+    "psr-4": { "Oilstone\\Bynder\\Tests\\": "tests" }
   }
 }
