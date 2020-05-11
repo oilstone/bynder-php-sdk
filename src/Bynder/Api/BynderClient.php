@@ -1,9 +1,9 @@
 <?php
-namespace Bynder\Api;
+namespace Oilstone\Bynder\Api;
 
-use Bynder\Api\Impl\AssetBankManager;
-use Bynder\Api\Impl\OAuth2;
-use Bynder\Api\Impl\PermanentTokens;
+use Oilstone\Bynder\Api\Impl\AssetBankManager;
+use Oilstone\Bynder\Api\Impl\OAuth2;
+use Oilstone\Bynder\Api\Impl\PermanentTokens;
 
 class BynderClient
 {

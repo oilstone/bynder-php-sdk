@@ -1,8 +1,8 @@
 <?php
-namespace Bynder\Api\Impl\OAuth2;
+namespace Oilstone\Bynder\Api\Impl\OAuth2;
 
-use Bynder\Api\Impl\AbstractRequestHandler;
-use Bynder\Api\Impl\OAuth2\BynderOauthProvider;
+use Oilstone\Bynder\Api\Impl\AbstractRequestHandler;
+use Oilstone\Bynder\Api\Impl\OAuth2\BynderOauthProvider;
 
 class RequestHandler extends AbstractRequestHandler
 {

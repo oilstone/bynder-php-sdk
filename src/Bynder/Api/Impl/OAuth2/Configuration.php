@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Bynder\Api\Impl\OAuth2;
+namespace Oilstone\Bynder\Api\Impl\OAuth2;
 
-use Bynder\Api\Impl\Oauth2\BynderOauthProvider;
+use Oilstone\Bynder\Api\Impl\Oauth2\BynderOauthProvider;
 
 /**
  * Class to hold Oauth2 tokens necessary for every API request.

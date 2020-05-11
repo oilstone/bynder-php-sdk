@@ -1,5 +1,5 @@
 <?php
-namespace Bynder\Api\Impl;
+namespace Oilstone\Bynder\Api\Impl;
 
 abstract class AbstractRequestHandler
 {

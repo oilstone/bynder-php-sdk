@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Bynder\Api\Impl;
+namespace Oilstone\Bynder\Api\Impl;
 
-use Bynder\Api\Impl\Upload\FileUploader;
+use Oilstone\Bynder\Api\Impl\Upload\FileUploader;
 
 class AssetBankManager
 {

@@ -27,7 +27,4 @@
   "autoload": {
     "psr-4": { "Oilstone\\Bynder\\" : "src/Bynder" }
   },
-  "autoload-dev": {
-    "psr-4": { "Oilstone\\Bynder\\Tests\\": "tests" }
-  }
 }

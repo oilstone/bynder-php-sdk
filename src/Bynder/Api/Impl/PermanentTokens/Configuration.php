@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bynder\Api\Impl\PermanentTokens;
+namespace Oilstone\Bynder\Api\Impl\PermanentTokens;
 
 class Configuration
 {

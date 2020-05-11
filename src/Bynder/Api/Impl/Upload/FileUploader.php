@@ -7,12 +7,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Bynder\Api\Impl\Upload;
+namespace Oilstone\Bynder\Api\Impl\Upload;
 
 use Exception;
 use GuzzleHttp\Promise;
 use VirtualFileSystem\FileSystem;
-use Bynder\Api\Impl\AbstractRequestHandler;
+use Oilstone\Bynder\Api\Impl\AbstractRequestHandler;
 
 /**
  * Class used to upload files to Bynder.

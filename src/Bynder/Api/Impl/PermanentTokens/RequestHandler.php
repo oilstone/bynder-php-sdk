@@ -1,10 +1,10 @@
 <?php
 
-namespace Bynder\Api\Impl\PermanentTokens;
+namespace Oilstone\Bynder\Api\Impl\PermanentTokens;
 
 use Guzzle;
 
-use Bynder\Api\Impl\AbstractRequestHandler;
+use Oilstone\Bynder\Api\Impl\AbstractRequestHandler;
 
 class RequestHandler extends AbstractRequestHandler
 {

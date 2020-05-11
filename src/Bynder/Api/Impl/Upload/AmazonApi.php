@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bynder\Api\Impl\Upload;
+namespace Oilstone\Bynder\Api\Impl\Upload;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\CurlHandler;
