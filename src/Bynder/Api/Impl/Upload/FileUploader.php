@@ -139,7 +139,7 @@ class FileUploader
 				function ($finalizeResponse) use ($data)
 				{
 					if( (isset($data['additional']) && $data['additional']) && (isset($data['mediaId'])) ) {
-						// Do nothing
+						return $finalizeResponse;
 					} else {
 						return $this->hasFinishedSuccessfullyAsync($finalizeResponse)
 							->then(
@@ -155,7 +155,7 @@ class FileUploader
 			->then(
 				function ($value) use ($data) {
 					if( (isset($data['additional']) && $data['additional']) && (isset($data['mediaId'])) ){
-						// Do nothing
+						return $value;
 					} else {
 						if ($value['pollStatus'] != false) {
 							$data['importId'] = $value['finalizeData']['importId'];
