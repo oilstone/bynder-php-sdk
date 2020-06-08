@@ -130,6 +130,7 @@ class FileUploader
 				{
 					if( (isset($data['additional']) && $data['additional']) && (isset($data['mediaId'])) ){
 						return $this->finalizeUploadAdditionalAsync($data['mediaId'], $value['requestInfo'], $value['chunkNumber']);
+
 					} else {
 						return $this->finalizeUploadAsync($value['requestInfo'], $value['chunkNumber']);
 					}
