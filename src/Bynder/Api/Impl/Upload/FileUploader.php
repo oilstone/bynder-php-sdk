@@ -270,7 +270,7 @@ class FileUploader
 		];
 		return $this->requestHandler->sendRequestAsync(
 			'POST',
-			sprintf('api/v4/upload/%s/', $uploadRequestInfo['s3file']['uploadid']),
+			'api/v4/upload/',
 			['form_params' => $data]
 		);
 	}
@@ -297,7 +297,7 @@ class FileUploader
 
 		return $this->requestHandler->sendRequestAsync(
 			'POST',
-			sprintf('api/v4/upload/%s/', $uploadRequestInfo['s3file']['uploadid']),
+			'api/v4/upload/',
 			['form_params' => $data]
 		);
 	}

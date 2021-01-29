@@ -1,6 +1,5 @@
 # Bynder PHP SDK
-[![Build Status](https://travis-ci.org/Bynder/bynder-php-sdk.svg?branch=master)](https://travis-ci.org/Bynder/bynder-php-sdk)
-[![Coverage Status](https://coveralls.io/repos/github/Bynder/bynder-php-sdk/badge.svg)](https://coveralls.io/github/Bynder/bynder-php-sdk)
+![Build](https://github.com/Bynder/bynder-php-sdk/workflows/Build/badge.svg)
 
 The main goal of this SDK is to speed up the integration of Bynder customers who use PHP. Making it easier to connect to the Bynder API (https://bynder.docs.apiary.io) and executing requests on it.
 
@@ -137,6 +136,20 @@ Media management.
 ```
 
 ## Tests
+
+### Using Docker
+
+Build the Docker image and tag it:
+```bash
+docker build -t bynder-php-sdk-tests
+```
+
+Run the tests:
+```bash
+docker run bynder-php-sdk-tests
+```
+
+### Running it locally
 
 Install dependencies as mentioned above (which will resolve [PHPUnit](http://packagist.org/packages/phpunit/phpunit)), then you can run the test suite:
 

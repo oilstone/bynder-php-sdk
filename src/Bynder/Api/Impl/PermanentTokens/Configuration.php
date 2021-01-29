@@ -12,6 +12,7 @@ namespace Oilstone\Bynder\Api\Impl\PermanentTokens;
 class Configuration
 {
     private $bynderDomain;
+    private $rootDir;
 
     /**
      * @var string Permanent token.
@@ -30,6 +31,8 @@ class Configuration
         $this->bynderDomain = $bynderDomain;
         $this->token = $token;
         $this->requestOptions = $requestOptions;
+        $this->rootDir = dirname(dirname(dirname(dirname(dirname(dirname(__FILE__))))));
+        $this->package = json_decode(file_get_contents($this->rootDir . '/composer.json'));
     }
 
     public function getBynderDomain()
@@ -57,6 +60,11 @@ class Configuration
         $this->token = $token;
     }
 
+    /**
+     * Returns the request options.
+     *
+     * @return array
+     */
     public function getRequestOptions()
     {
         return $this->requestOptions;
@@ -65,5 +73,15 @@ class Configuration
     public function setRequestOptions(array $requestOptions)
     {
         $this->requestOptions = $requestOptions;
+    }
+
+    /**
+     * Returns the SDK's version.
+     *
+     * @return string
+     */
+    public function getSdkVersion()
+    {
+        return $this->package->version;
     }
 }
