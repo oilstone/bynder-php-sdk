@@ -17,7 +17,7 @@ use Oilstone\Bynder\Api\Impl\Oauth2\BynderOauthProvider;
 class Configuration
 {
     private $bynderDomain;
-
+    private $rootDir;
     private $redirectUri;
 
     /**
@@ -52,7 +52,8 @@ class Configuration
         $this->clientSecret = $clientSecret;
         $this->token = $token;
         $this->requestOptions = $requestOptions;
-
+        $this->rootDir = dirname(dirname(dirname(dirname(dirname(dirname(__FILE__))))));
+        $this->package = json_decode(file_get_contents($this->rootDir . '/composer.json'));
         $this->initialToken = $token;
     }
 
@@ -136,5 +137,15 @@ class Configuration
     public function setRequestOptions(array $requestOptions)
     {
         $this->requestOptions = $requestOptions;
+    }
+
+    /**
+     * Returns the SDK's version.
+     *
+     * @return string
+     */
+    public function getSdkVersion()
+    {
+        return $this->package->version;
     }
 }
